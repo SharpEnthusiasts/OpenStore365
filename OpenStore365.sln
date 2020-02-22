@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E243F1CC-834
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{61FAF6D3-D8D5-43EA-889D-26C9AC98AF8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStore365.Samples.Serverless.Auth", "samples\OpenStore365.Samples.Serverless.Auth\OpenStore365.Samples.Serverless.Auth.csproj", "{80B7B983-DD28-4400-9580-05AB40808613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenStore365.Samples.Serverless.Auth", "samples\OpenStore365.Samples.Serverless.Auth\OpenStore365.Samples.Serverless.Auth.csproj", "{80B7B983-DD28-4400-9580-05AB40808613}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{D3D8A44E-F344-4533-AAA9-3CB0BBC26322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStore365.Serverless", "core\OpenStore365.Serverless\OpenStore365.Serverless.csproj", "{AA21B013-E05F-45CF-B8CC-457995F0C1EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenStore365.Serverless", "core\OpenStore365.Serverless\OpenStore365.Serverless.csproj", "{AA21B013-E05F-45CF-B8CC-457995F0C1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStore365.Serverless.Auth", "core\OpenStore365.Serverless.Auth\OpenStore365.Serverless.Auth.csproj", "{8E7FC5E9-0A21-4C65-A264-4D6F462680BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AA21B013-E05F-45CF-B8CC-457995F0C1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA21B013-E05F-45CF-B8CC-457995F0C1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA21B013-E05F-45CF-B8CC-457995F0C1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7FC5E9-0A21-4C65-A264-4D6F462680BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7FC5E9-0A21-4C65-A264-4D6F462680BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7FC5E9-0A21-4C65-A264-4D6F462680BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7FC5E9-0A21-4C65-A264-4D6F462680BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{80B7B983-DD28-4400-9580-05AB40808613} = {61FAF6D3-D8D5-43EA-889D-26C9AC98AF8E}
 		{AA21B013-E05F-45CF-B8CC-457995F0C1EC} = {D3D8A44E-F344-4533-AAA9-3CB0BBC26322}
+		{8E7FC5E9-0A21-4C65-A264-4D6F462680BD} = {D3D8A44E-F344-4533-AAA9-3CB0BBC26322}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00B2A46C-0B29-4CA4-B865-939CC491E93A}

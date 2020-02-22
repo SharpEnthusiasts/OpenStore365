@@ -4,9 +4,11 @@
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.3" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\core\OpenStore365.Serverless.Auth\OpenStore365.Serverless.Auth.csproj" />
     <ProjectReference Include="..\..\core\OpenStore365.Serverless\OpenStore365.Serverless.csproj" />
   </ItemGroup>
   <ItemGroup>
