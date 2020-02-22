@@ -10,7 +10,7 @@ namespace OpenStore365.Samples.Serverless.Auth.Functions
     {
         [FunctionName(nameof(GetHttpHeaders))]
         public static IActionResult Execute(
-            [HttpTrigger(AuthorizationLevel.Anonymous, HTTP.GET, Route = "Http/Headers")] HttpRequest request) =>
-                new OkObjectResult(request.Headers);
+            [HttpTrigger(AuthorizationLevel.Anonymous, HTTP.GET, Route = "Http/Headers")] HttpRequest httpRequest) =>
+                new OkObjectResult(httpRequest.Headers);
     }
 }
