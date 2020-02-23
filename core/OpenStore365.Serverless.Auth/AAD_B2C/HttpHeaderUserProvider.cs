@@ -9,7 +9,7 @@ namespace OpenStore365.Serverless.Auth.AAD_B2C
         public User GetUser(HttpRequest httpRequest) =>
             new User(
                 ExtractUserId(httpRequest),
-                TryExtractDisplayName(httpRequest));
+                ExtractDisplayNameOrDefault(httpRequest));
 
         private string ExtractUserId(HttpRequest httpRequest)
         {
@@ -26,7 +26,7 @@ namespace OpenStore365.Serverless.Auth.AAD_B2C
             return id;
         }
 
-        private string TryExtractDisplayName(HttpRequest httpRequest)
+        private string ExtractDisplayNameOrDefault(HttpRequest httpRequest)
         {
             httpRequest.Headers.TryGetValue(EasyAuth.HttpHeaders.DISPLAY_NAME, out var displayName);
             return displayName;
